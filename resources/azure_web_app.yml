@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  namespace: azure
+  name: azure-web-app
+  description: Azure Web App
+spec:
+  type: web
+  owner: unicorns
+  system: azurefactory-web
