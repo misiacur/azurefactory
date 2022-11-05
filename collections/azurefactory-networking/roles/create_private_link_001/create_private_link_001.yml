@@ -1,6 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
+  namespace: azurefactory-networking
   name: create_private_link_001
   description: Create Azure Private Link role
   tags:
