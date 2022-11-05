@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: create_web_app_002
+  description: Create Azure WebApp role
+  tags:
+    - azurefactory
+    - web
+  links:
+    - url: https://example.com/user
+      title: Examples Users
+      icon: user
+    - url: https://example.com/group
+      title: Example Group
+      icon: group
+    - url: https://example.com/cloud
+      title: Link with Cloud Icon
+      icon: cloud
+spec:
+  type: library
+  lifecycle: production
+  owner: unicorns
+  system: azurefactory-web
+  dependsOn: ['component:create_private_link_001']
