@@ -1,6 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
+  namespace: azurefactory-security
   name: login_vault_001
   description: Login to EVA vault role
   tags:
