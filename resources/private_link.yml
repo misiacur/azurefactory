@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  namespace: azure
+  name: private-link
+  description: Azure Private Link
+spec:
+  type: networking
+  owner: unicorns
+  system: azurefactory-networking
