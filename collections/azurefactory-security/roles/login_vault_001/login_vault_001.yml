@@ -5,7 +5,7 @@ metadata:
   description: Login to EVA vault role
   tags:
     - azurefactory
-    - core
+    - security
   links:
     - url: https://example.com/user
       title: Examples Users
