@@ -22,4 +22,4 @@ spec:
   lifecycle: production
   owner: unicorns
   system: azurefactory-web
-  dependsOn: ['component:azurefactory-networking/create_private_link_001']
+  dependsOn: ['component:azurefactory-networking/create_private_link_001', 'resource:azure/private-link', 'resource:azure/azure-web-app']
