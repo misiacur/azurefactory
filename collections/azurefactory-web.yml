@@ -1,6 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
+  namespace: azurefactory-web
   name: azurefactory-web
   description: Web collection for AzureFactory
 spec:
