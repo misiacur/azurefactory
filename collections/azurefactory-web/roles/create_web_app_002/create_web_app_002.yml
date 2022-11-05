@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: create_web_app_002
+  namespace: azurefactory-web
   description: Create Azure WebApp role
   tags:
     - azurefactory
@@ -21,4 +22,4 @@ spec:
   lifecycle: production
   owner: unicorns
   system: azurefactory-web
-  dependsOn: ['component:create_private_link_001']
+  dependsOn: ['component:azurefactory-networking/create_private_link_001']
