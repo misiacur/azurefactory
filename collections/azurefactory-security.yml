@@ -1,6 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
+  namespace: azurefactory-security
   name: azurefactory-security
   description: Security collection for AzureFactory
 spec:
