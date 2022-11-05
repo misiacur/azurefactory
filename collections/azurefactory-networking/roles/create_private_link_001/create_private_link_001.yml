@@ -22,3 +22,4 @@ spec:
   lifecycle: production
   owner: unicorns
   system: azurefactory-networking
+  dependsOn: ['resource:azure/private-link']
