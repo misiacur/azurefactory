@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  namespace: azurefactory-core
+  name: azurefactory-core
+  description: Core collection for AzureFactory
+spec:
+  owner: unicorns
+  domain: azurefactory

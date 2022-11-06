@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  namespace: azurefactory-networking
+  name: azurefactory-networking
+  description: Networking collection for AzureFactory
+spec:
+  owner: unicorns
+  domain: azurefactory

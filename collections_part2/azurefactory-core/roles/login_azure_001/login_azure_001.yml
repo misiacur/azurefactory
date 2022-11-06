@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  namespace: azurefactory
+  name: login_azure_001
+  description: Login to Azure role
+  tags:
+    - azurefactory
+    - core
+  links:
+    - url: https://example.com/user
+      title: Examples Users
+      icon: user
+    - url: https://example.com/group
+      title: Example Group
+      icon: group
+    - url: https://example.com/cloud
+      title: Link with Cloud Icon
+      icon: cloud
+spec:
+  type: library
+  lifecycle: production
+  owner: unicorns
+  subcomponentOf: azurefactory/azurefactory-core
