@@ -65,7 +65,7 @@ spec:
       input:
         url: ./template
         values:
-          name: ${{ parameters.swci }}
+          swci: ${{ parameters.swci }}
 
     - id: fetch-docs
       name: Fetch Docs

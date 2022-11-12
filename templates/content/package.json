@@ -1,0 +1,5 @@
+{
+  "name": "${{ values.swci }}",
+  "private": true,
+  "dependencies": {}
+}
