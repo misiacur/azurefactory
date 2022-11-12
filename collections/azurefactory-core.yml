@@ -31,4 +31,4 @@ spec:
   type: library
   lifecycle: production
   owner: azurefactory/unicorns
-  system: azurefactory-core
+  system: azurefactory/azurefactory-core

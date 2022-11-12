@@ -31,5 +31,5 @@ spec:
   type: library
   lifecycle: production
   owner: azurefactory/unicorns
-  system: azurefactory-networking
+  system: azurefactory/azurefactory-networking
   dependsOn: ['resource:azure/private-link']
