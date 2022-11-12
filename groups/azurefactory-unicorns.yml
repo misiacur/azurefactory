@@ -6,7 +6,7 @@ metadata:
   description: The Azure Factory Team
 spec:
   type: team
-  children: [azurefactory-core-team]
+  children: [azurefactory-core-team, azurefactory-web-team]
   profile:
     displayName: AzureFactory Team
     email: infrastructure@example.com

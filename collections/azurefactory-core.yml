@@ -5,7 +5,7 @@ metadata:
   name: azurefactory-core
   description: Core collection for AzureFactory
 spec:
-  owner: azurefactory/unicorns
+  owner: azurefactory/azurefactory-core-team
   domain: default/azurefactory
 ---
 apiVersion: backstage.io/v1alpha1
