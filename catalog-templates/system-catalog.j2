@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  namespace: azurefactory
+  name: azurefactory-{{ collection.name }}
+  description: {{ collection.name | capitalize }} collection for AzureFactory
+spec:
+  owner: azurefactory/azurefactory-{{ collection.name }}-team
+  domain: default/azurefactory

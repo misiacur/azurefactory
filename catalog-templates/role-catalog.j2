@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: {{ role.name }}
+  namespace: azurefactory-{{ collection.name }}
+  description: Role {{ role.name }} from Azure Factory {{ collection.name }} collection
+  tags:
+    - azurefactory
+    - {{ collection.name }}
+  links:
+    - url: https://example.com/user
+      title: Examples Users
+      icon: user
+    - url: https://example.com/group
+      title: Example Group
+      icon: group
+    - url: https://example.com/cloud
+      title: Link with Cloud Icon
+      icon: cloud
+spec:
+  type: library
+  lifecycle: production
+  owner: azurefactory/azurefactory-{{ collection.name }}-team
+  system: azurefactory/azurefactory-{{ collection.name }}
+  dependsOn: [
+    'component:azurefactory-networking/create_private_endpoint_001', 
+    'component:azurefactory-core/check_azcli_001',
+    'component:azurefactory-core/create_resource_group_001',
+    'component:azurefactory-security/set_subscription_001',
+]
