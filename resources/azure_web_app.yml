@@ -6,5 +6,5 @@ metadata:
   description: Azure Web App
 spec:
   type: web
-  owner: unicorns
+  owner: azurefactory/unicorns
   system: azurefactory-web

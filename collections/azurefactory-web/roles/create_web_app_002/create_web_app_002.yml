@@ -20,6 +20,6 @@ metadata:
 spec:
   type: library
   lifecycle: production
-  owner: unicorns
-  system: azurefactory-web
+  owner: azurefactory/unicorns
+  system: azurefactory/azurefactory-web
   dependsOn: ['component:azurefactory-networking/create_private_link_001', 'resource:azure/private-link', 'resource:azure/azure-web-app']

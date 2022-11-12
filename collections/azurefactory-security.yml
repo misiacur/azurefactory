@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  namespace: azurefactory-security
+  namespace: azurefactory
   name: azurefactory-security
   description: Security collection for AzureFactory
 spec:
-  owner: unicorns
+  owner: azurefactory/unicorns
   domain: azurefactory

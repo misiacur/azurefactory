@@ -6,5 +6,5 @@ metadata:
   description: Azure Private Link
 spec:
   type: networking
-  owner: unicorns
+  owner: azurefactory/unicorns
   system: azurefactory-networking

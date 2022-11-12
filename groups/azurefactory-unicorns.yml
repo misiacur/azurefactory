@@ -6,9 +6,25 @@ metadata:
   description: The Azure Factory Team
 spec:
   type: team
-  children: []
+  children: [azurefactory-core-team]
   profile:
     displayName: AzureFactory Team
     email: infrastructure@example.com
     picture: https://example.com/groups/bu-infrastructure.jpeg
   members: [azurefactory/trzecimi, azurefactory/kopecda]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  namespace: azurefactory
+  name: azurefactory-core-team
+  description: The Azure Factory Core Component Team
+spec:
+  type: team
+  parent: azurefactory/unicorns
+  children: []
+  profile:
+    displayName: AzureFactory Core Team
+    email: infrastructure@example.com
+    picture: https://example.com/groups/bu-infrastructure.jpeg
+  members: [azurefactory/barbroro]

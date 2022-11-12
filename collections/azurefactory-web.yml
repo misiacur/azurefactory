@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  namespace: azurefactory-web
+  namespace: azurefactory
   name: azurefactory-web
   description: Web collection for AzureFactory
 spec:
-  owner: unicorns
+  owner: azurefactory/unicorns
   domain: azurefactory

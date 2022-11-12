@@ -21,3 +21,17 @@ spec:
     email: damian.kopec@ubs.com
     picture: https://example.com/staff/jenny-with-party-hat.jpeg
   memberOf: [azurefactory/unicorns]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  namespace: azurefactory
+  name: barbroro
+spec:
+  profile:
+    displayName: Roberto Barbrosa
+    email: roberto.barbrosa@ubs.com
+    picture: https://example.com/staff/jenny-with-party-hat.jpeg
+  memberOf: [azurefactory/azurefactory-core-team]
+
+  
