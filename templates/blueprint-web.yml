@@ -22,18 +22,30 @@ spec:
           ui:autofocus: true
           ui:options:
             rows: 5
-    - title: Choose a location
-      required:
-        - repoUrl
+
+    - title: Fill in some steps
       properties:
-        repoUrl:
-          title: Repository Location
+        volume_type:
+          title: SKU size
           type: string
-          ui:field: RepoUrlPicker
-          ui:options:
-            allowedHosts:
-              - github.com
-    
+          description: The volume type to be used
+          default: gp2
+          enum:
+            - gp2
+            - gp3
+            - io1
+            - io2
+            - sc1
+            - st1
+            - standard
+          enumNames:
+            - 'General Purpose SSD (gp2)'
+            - 'General Purpose SSD (gp3)'
+            - 'Provisioned IOPS (io1)'
+            - 'Provisioned IOPS (io2)'
+            - 'Cold HDD (sc1)'
+            - 'Throughput Optimized HDD (st1)'
+            - 'Magnetic (standard)'
 
   # here's the steps that are executed in series in the scaffolder backend
   steps:
@@ -58,7 +70,7 @@ spec:
       input:
         allowedHosts: ['github.com']
         description: 'This is {{ parameters.swci }}'
-        repoUrl: '{{ parameters.repoUrl }}'
+        repoUrl: '{{ parameters.swci  }}'
 
     - id: register
       name: Register
