@@ -20,5 +20,5 @@ metadata:
 spec:
   type: library
   lifecycle: production
-  owner: unicorns
+  owner: azurefactory/unicorns
   system: azurefactory-core
