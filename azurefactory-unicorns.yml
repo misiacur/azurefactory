@@ -1,6 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
+  namespace: azurefactory
   name: unicorns
   description: The Azure Factory Team
 spec:
@@ -9,4 +10,4 @@ spec:
     displayName: AzureFactory Team
     email: infrastructure@example.com
     picture: https://example.com/groups/bu-infrastructure.jpeg
-  members: [michal, robert, damian, silviu]
+  members: [azurefactory/trzecimi, azurefactory/kopecda]

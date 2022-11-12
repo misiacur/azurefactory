@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  namespace: azurefactory
+  name: trzecimi
+spec:
+  profile:
+    displayName: Michal Trzeciak
+    email: michal.trzeciak@ubs.com
+    picture: https://example.com/staff/jenny-with-party-hat.jpeg
+  memberOf: [azurefactory/unicorns]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  namespace: azurefactory
+  name: kopecda
+spec:
+  profile:
+    displayName: Damian Kopec
+    email: damian.kopec@ubs.com
+    picture: https://example.com/staff/jenny-with-party-hat.jpeg
+  memberOf: [azurefactory/unicorns]
