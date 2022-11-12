@@ -1,4 +1,4 @@
-apiVersion: backstage.io/v1beta2
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 # some metadata about the template itself
 metadata:
@@ -6,7 +6,7 @@ metadata:
   title: Azure Factory Blueprint web template
   description: Azure Factory Blueprint web template
 spec:
-  owner: unicorns
+  owner: azurefactory/unicorns
   type: service
 
   # these are the steps which are rendered in the frontend with the form input
