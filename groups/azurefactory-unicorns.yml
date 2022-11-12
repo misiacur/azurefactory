@@ -28,3 +28,19 @@ spec:
     email: infrastructure@example.com
     picture: https://example.com/groups/bu-infrastructure.jpeg
   members: [azurefactory/barbroro]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  namespace: azurefactory
+  name: azurefactory-web-team
+  description: The Azure Factory Weeb Component Team
+spec:
+  type: team
+  parent: azurefactory/unicorns
+  children: []
+  profile:
+    displayName: AzureFactory Web Team
+    email: infrastructure@example.com
+    picture: https://example.com/groups/bu-infrastructure.jpeg
+  members: [azurefactory/gfellnzo]
