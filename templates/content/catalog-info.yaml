@@ -2,14 +2,19 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ${{ values.swci | dump }}
+  description: This is Application geterated by Azure Factory Web template
+  tags:
+    - azurefactory
+    - template_web
+    - web_app
 spec:
   type: service
   owner: user:azurefactory/trzecimi
   lifecycle: experimental
   dependsOn: [
     'component:azurefactory-web/create_web_app_002',
-    'component:azurefactory-networking/create_private_endpoint_001', 
-    'component:azurefactory-core/check_azcli_001',
+    'component:azurefactory-networking/create_private_link_001', 
+    'component:azurefactory-security/login_vault_001',
     'component:azurefactory-core/create_resource_group_001',
     'component:azurefactory-security/set_subscription_001',
   ]
