@@ -4,10 +4,10 @@ metadata:
   name: ${{ values.swci | dump }}
 spec:
   type: service
-  owner: user:trzecimi
+  owner: user:azurefactory/trzecimi
   lifecycle: experimental
   dependsOn: [
-    'component:azurefactory-web/create_azure_webapp_002',
+    'component:azurefactory-web/create_web_app_002',
     'component:azurefactory-networking/create_private_endpoint_001', 
     'component:azurefactory-core/check_azcli_001',
     'component:azurefactory-core/create_resource_group_001',

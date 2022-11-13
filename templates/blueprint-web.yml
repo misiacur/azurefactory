@@ -11,9 +11,10 @@ spec:
 
   # these are the steps which are rendered in the frontend with the form input
   parameters:
-    - title: Your Application SWCI
+    - title: Your Application Info
       required:
         - swci
+        - owner
       properties:
         swci:
           title: SWCI
@@ -22,6 +23,14 @@ spec:
           ui:autofocus: true
           ui:options:
             rows: 5
+        owner:
+          title: Owner
+          type: string
+          description: Owner of the component
+          ui:field: OwnerPicker
+          ui:options:
+            allowedKinds:
+              - User
     - title: Choose a location
       required:
         - repoUrl
@@ -72,6 +81,7 @@ spec:
       action: fetch:template
       input:
         url: https://github.com/misiacur/azurefactory/tree/main/test/ubs-azurefactory-web/azurefactory/web/roles/create_azure_webapp_002
+        targetPath: ./azurefactory/d1/chn
         values:
           name: ${{ parameters.swci }}
           sku: ${{ parameters.volume_type }}
