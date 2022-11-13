@@ -5,8 +5,8 @@ metadata:
   description: This is Application geterated by Azure Factory Web template
   tags:
     - azurefactory
-    - templateweb
-    - web_app
+    - template-web
+    - web-app
 spec:
   type: service
   owner: user:azurefactory/trzecimi
