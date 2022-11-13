@@ -5,7 +5,7 @@ metadata:
   description: This is Application geterated by Azure Factory Web template
   tags:
     - azurefactory
-    - template_web
+    - template-web
     - web_app
 spec:
   type: service
