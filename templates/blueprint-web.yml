@@ -63,9 +63,18 @@ spec:
       name: Fetch Base
       action: fetch:template
       input:
-        url: ./template
+        url: ./content
         values:
           swci: ${{ parameters.swci }}
+
+    - id: fetch-web
+      name: Fetch Azure Factory create_web_app_002
+      action: fetch:template
+      input:
+        url: https://github.com/misiacur/azurefactory/tree/main/test/ubs-azurefactory-web/azurefactory/web/roles/create_azure_webapp_002
+        values:
+          name: ${{ parameters.swci }}
+          sku: ${{ parameters.volume_type }}
 
     - id: publish
       name: Publish

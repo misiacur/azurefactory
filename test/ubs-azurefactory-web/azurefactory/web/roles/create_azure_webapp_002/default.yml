@@ -1,0 +1,12 @@
+web_app_1:
+  kind: "webapp"
+  name: "cirruspl-${{ values.swci | dump }}-webapp"
+  group_name: "${{ values.swci | dump }}-rg"
+  settings:
+    sku: ${{ values.sku | dump }}
+    runtime: "Java11"
+  dependency: 
+    networks: 
+      vnet: "xxx"
+      subnet: "yyy"
+      
